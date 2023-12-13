@@ -23,8 +23,15 @@ message Evaluation {
   int32 mark = 3;
 }
 
+message AnsweredQuestion {
+  Question question = 1;
+  string answer = 2;
+}
+
 service Tutorial {
   rpc getQuestion(Student) returns(Question) {}
 
   rpc sendAnswer(Answer) returns(Evaluation) {}
+
+  rpc getTutorial(Student) returns (stream AnsweredQuestion) {}
 }
