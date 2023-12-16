@@ -71,3 +71,45 @@ final $typed_data.Uint8List evaluationDescriptor = $convert.base64Decode(
     'CgpFdmFsdWF0aW9uEg4KAmlkGAEgASgFUgJpZBIaCghhbnN3ZXJJZBgCIAEoBVIIYW5zd2VySW'
     'QSEgoEbWFyaxgDIAEoBVIEbWFyaw==');
 
+@$core.Deprecated('Use answeredQuestionDescriptor instead')
+const AnsweredQuestion$json = {
+  '1': 'AnsweredQuestion',
+  '2': [
+    {'1': 'question', '3': 1, '4': 1, '5': 11, '6': '.Question', '10': 'question'},
+    {'1': 'answer', '3': 2, '4': 1, '5': 9, '10': 'answer'},
+  ],
+};
+
+/// Descriptor for `AnsweredQuestion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List answeredQuestionDescriptor = $convert.base64Decode(
+    'ChBBbnN3ZXJlZFF1ZXN0aW9uEiUKCHF1ZXN0aW9uGAEgASgLMgkuUXVlc3Rpb25SCHF1ZXN0aW'
+    '9uEhYKBmFuc3dlchgCIAEoCVIGYW5zd2Vy');
+
+@$core.Deprecated('Use examDescriptor instead')
+const Exam$json = {
+  '1': 'Exam',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 5, '10': 'id'},
+    {'1': 'questions', '3': 2, '4': 3, '5': 11, '6': '.Question', '10': 'questions'},
+  ],
+};
+
+/// Descriptor for `Exam`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List examDescriptor = $convert.base64Decode(
+    'CgRFeGFtEg4KAmlkGAEgASgFUgJpZBInCglxdWVzdGlvbnMYAiADKAsyCS5RdWVzdGlvblIJcX'
+    'Vlc3Rpb25z');
+
+@$core.Deprecated('Use interviewMessageDescriptor instead')
+const InterviewMessage$json = {
+  '1': 'InterviewMessage',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'body', '3': 2, '4': 1, '5': 9, '10': 'body'},
+  ],
+};
+
+/// Descriptor for `InterviewMessage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List interviewMessageDescriptor = $convert.base64Decode(
+    'ChBJbnRlcnZpZXdNZXNzYWdlEhIKBG5hbWUYASABKAlSBG5hbWUSEgoEYm9keRgCIAEoCVIEYm'
+    '9keQ==');
+

@@ -28,10 +28,27 @@ message AnsweredQuestion {
   string answer = 2;
 }
 
+message Exam {
+  int32 id = 1;
+  repeated Question questions = 2;
+}
+
+message InterviewMessage {
+  string name = 1;
+  string body = 2;
+}
+
+
 service Tutorial {
   rpc getQuestion(Student) returns(Question) {}
 
   rpc sendAnswer(Answer) returns(Evaluation) {}
 
   rpc getTutorial(Student) returns (stream AnsweredQuestion) {}
+
+  rpc getExam(Student) returns (Exam) {}
+
+  rpc takeExam(stream Answer) returns(Evaluation) {}
+
+  rpc techInterview(stream InterviewMessage) returns(stream InterviewMessage) {}
 }
